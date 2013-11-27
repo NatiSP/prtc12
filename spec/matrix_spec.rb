@@ -1,7 +1,16 @@
+# encoding: utf-8
+
 require "prtc09"
 
+# Conjunto de expectativas rspec Matrix
+
 describe Prtc09::Matrix do
+  
+  # Antes de realizar cualquier expectativa, se realizan las siguientes órdenes
+  
   before :all do
+    
+   # Definición del cero entero para las matrices densas
     
    class Enteros < Prtc09::Matrix_Densa
      def cero
@@ -9,11 +18,15 @@ describe Prtc09::Matrix do
      end
     end
     
+    # Definición del cero entero para las matrices dispersas
+    
     class Enteros_dis < Prtc09::Matrix_Dispersa
       def cero
 	 0
       end
     end
+    
+    # Definición del cero fraccionario para las matrices densas
     
     class Fraccionarios < Prtc09::Matrix_Densa
       def cero
@@ -21,33 +34,41 @@ describe Prtc09::Matrix do
       end
     end
     
+     # Definición del cero fraccionario para las matrices dispersas
+    
      class Fraccionarios_dis < Prtc09::Matrix_Dispersa
       def cero
 	Prtc09::Fraccion.new(0,1)
       end
     end
     
-    #Matrices llenas de enteros (0)
+    # Creación de dos matrices llenas de enteros (0)
     
     @matriz1 = Enteros.new(2,2)
     @matriz2 = Enteros.new(2,2)
 
-    #Matrices dispersas llenas de enteros (0)
+    # Creación de dos matrices dispersas llenas de enteros (0)
 
     @matriz3 = Enteros_dis.new(2,2)
     @matriz4 = Enteros_dis.new(2,2)
 
-    #Matrices llenas de fracciones (0/1)
+    # Creación de dos matrices llenas de fracciones (0/1)
 
     @matriz5 = Fraccionarios.new(2,2)
     @matriz6 = Fraccionarios.new(2,2)
 
-    #Matrices dispersas llenas de fracciones (0/1)
+    # Creación de dos matrices dispersas llenas de fracciones (0/1)
 
     @matriz7 = Fraccionarios_dis.new(2,2)
     @matriz8 = Fraccionarios_dis.new(2,2)
   end
   
+  
+    # Expectativas
+  
+  
+    # Comprueba que la suma de dos matrices da el resultado correcto
+ 
     it "Deben sumarse dos matrices de enteros" do
     
       @matriz1[0,0]=1
@@ -71,6 +92,9 @@ describe Prtc09::Matrix do
     
     end
     
+    
+    # Comprueba que la suma de dos matrices dispersas da el resultado correcto
+    
     it "Deben sumarse dos matrices dispersas de enteros" do
       @matriz3[0,0]=1
       @matriz3[0,1]=0
@@ -92,7 +116,10 @@ describe Prtc09::Matrix do
          (@matriz3+@matriz4).should ==(@matrizdsuma)
 
     end
-        
+    
+    
+    # Comprueba que la resta de dos matrices da el resultado correcto
+    
     it "Deben restarse dos matrices de enteros" do
       
       @matriz1[0,0]=1
@@ -116,6 +143,9 @@ describe Prtc09::Matrix do
     
     end
     
+
+    # Comprueba que la resta de dos matrices dispersas da un resultado correcto
+    
     it "Deben restarse dos matrices dispersas de enteros" do
       @matriz3[0,0]=2
       @matriz3[0,1]=0
@@ -138,6 +168,9 @@ describe Prtc09::Matrix do
 
     end
        
+    
+    # Comprueba que la multiplicacion de dos matrices de enteros da un resultado correcto
+    
     it "Deben multiplicarse dos matrices de enteros" do
     
       @matriz1[0,0]=2
@@ -160,6 +193,9 @@ describe Prtc09::Matrix do
         (@matriz1*@matriz2).should ==(@matrizmul)
     
     end  
+    
+    
+    # Comprueba que la multiplicacion de dos matrices dispersas de enteros da un resultado correcto
   
     it "Deben multiplicarse dos matrices dispersas de enteros" do
       
@@ -186,6 +222,8 @@ describe Prtc09::Matrix do
     end  
 
     
+    # Comprueba que la suma de dos matrices de fracciones da un resultado correcto
+    
     it "Deben sumarse dos matrices de fracciones" do
     
 
@@ -211,6 +249,9 @@ describe Prtc09::Matrix do
     
     end  
     
+    
+    # Comprueba que la resta de dos matrices de fracciones da un resultado correcto
+    
     it "Deben restarse dos matrices de fracciones" do
     
       @matriz5[0,0]=Prtc09::Fraccion.new(2,2)
@@ -233,6 +274,9 @@ describe Prtc09::Matrix do
         (@matriz5-@matriz6).should ==(@matrizfres)
     
     end
+    
+    
+    # Comprueba que la multiplicacion de dos matrices de fracciones da un resultado correcto
     
     it "Deben multiplicarse dos matrices de fracciones" do
     
@@ -257,6 +301,9 @@ describe Prtc09::Matrix do
     
     end  
 
+    
+    # Comprueba que la suma de dos matrices dispersas de fracciones da un resultado correcto
+    
     it "Deben sumarse dos matrices dispersas de fracciones" do
       
       @matriz7[0,0]=Prtc09::Fraccion.new(1,1)
@@ -280,6 +327,9 @@ describe Prtc09::Matrix do
       
     end
 
+    
+    # Comprueba que la resta de dos matrices dispersas de fracciones da un resultado correcto
+    
     it "Deben restarse dos matrices dispersas de fracciones" do
             
       @matriz7[0,0]=Prtc09::Fraccion.new(2,2)
@@ -302,6 +352,9 @@ describe Prtc09::Matrix do
          (@matriz7-@matriz8).should ==(@matrizdfresta)
 
     end
+    
+    
+    # Comprueba que la multiplicacion de dos matrices dispersas de fracciones da un resultado correcto
 
     it "Deben multiplicarse dos matrices dispersas de fracciones" do
               
@@ -327,6 +380,7 @@ describe Prtc09::Matrix do
     end
     
     
+    # Comprueba que la suma entre una matriz densa y una dispersa da un resultado correcto
     
     it "Deben sumarse una matriz densa y una dispersa" do
       
@@ -351,6 +405,9 @@ describe Prtc09::Matrix do
 
     end
     
+    
+    # Comprueba que la resta entre una matriz densa y una dispersa da un resultado correcto
+    
     it "Deben restarse una matriz densa y una dispersa" do
       
           @matriz1[0,0] = 1
@@ -373,6 +430,9 @@ describe Prtc09::Matrix do
       (@matriz1-@matriz3).should ==(@matrizresta)
 
     end
+    
+    
+    # Comprueba que la multiplicacion entre una matriz densa y una dispersa da un resultado correcto
     
     it "Deben multiplicarse una matriz densa y una dispersa" do
       
@@ -398,6 +458,7 @@ describe Prtc09::Matrix do
     end
     
     
+    # Comprueba que la suma entre una matriz densa y una dispersa da un resultado correcto
     
     it "Deben sumarse una matriz densa de enteros y una dispersa de fracciones" do
     
@@ -420,6 +481,9 @@ describe Prtc09::Matrix do
        (@matriz1+@matriz7).should ==(@mprueba)     
     end
 
+    
+    # Comprueba que la resta entre una matriz densa de enteros y una dispersa de fracciones da un resultado correcto
+    
     it "Deben restarse una matriz densa de enteros y una dispersa de fracciones" do
     
      @matriz1[0,0] = 1
@@ -440,6 +504,9 @@ describe Prtc09::Matrix do
      
        (@matriz1- @matriz7).should ==(@mprueba)     
     end
+    
+    
+    # Comprueba que la multiplicacion entre una matriz densa de enteros y una dispersa de fracciones da un resultado correcto
     
     it "Deben multiplicarse una matriz densa de enteros y una dispersa de fracciones" do
     
@@ -462,6 +529,9 @@ describe Prtc09::Matrix do
        (@matriz1*@matriz7).should ==(@mprueba)     
     end
     
+    
+    # Comprueba que las funciones min y max devuelven el valor maximo y el mínimo de una matriz
+    
     it "Minimo y máximo" do
       
      @matriz1[0,0] = 2
@@ -472,6 +542,10 @@ describe Prtc09::Matrix do
      (@matriz1.min).should ==(@matriz1[1,1])
      (@matriz1.max).should ==(@matriz1[0,0])
     end
+    
+    
+    # Esta expectativa pertenece a la modificación pedida en la práctica anterior. 
+    # Se comprueba que las operaciones básicas entre una matriz densa de enteros y una matriz dispersa de fracciones dan resultados correctos.
     
     it "Operaciones de la modificacion" do
      @matriz1[0,0] = 1

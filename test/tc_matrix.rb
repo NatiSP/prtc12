@@ -3,11 +3,16 @@ require "test/unit"
 require "lib/prtc09"
 
 
+# Definición del cero entero para las matrices densas
+
 class Enteros < Matrix_Densa 
   def cero 
     0 
   end 
 end 
+
+
+# Definición del cero entero para las matrices dispersas
 
 class Enteros_dis < Matrix_Dispersa 
   def cero 
@@ -15,11 +20,17 @@ class Enteros_dis < Matrix_Dispersa
   end 
 end 
 
+
+# Definición del cero fraccionario para las matrices densas
+
 class Fraccionarios < Matrix_Densa 
   def cero 
     Prtc09::Fraccion.new(0,1) 
   end 
 end 
+
+
+# Definición del cero fraccionario para las matrices dispersas
 
 class Fraccionarios_dis < Matrix_Dispersa 
   def cero 
@@ -27,8 +38,13 @@ class Fraccionarios_dis < Matrix_Dispersa
   end 
 end
 
+
+# Se define la clase Test_MatrizDensa, que es una clase hija de TestCase. Su objetivo es servir de test para las matrices densas.
+
 class Prtc09::Test_MatrizDensa < Test::Unit::TestCase
 
+  # Función para definir todos los elementos necesarios para el test.
+  
   def setup
     @matriz1 = Enteros.new(2,2)
     @matriz2 = Enteros.new(2,2)
@@ -60,6 +76,9 @@ class Prtc09::Test_MatrizDensa < Test::Unit::TestCase
 
   end
 
+  
+  # Funcion de test que comprueba las sumas.
+  
   def test_suma
 
     @matriz3[0,0] = 2
@@ -83,6 +102,8 @@ class Prtc09::Test_MatrizDensa < Test::Unit::TestCase
   end
 
 
+  # Funcion de test que comprueba las restas.
+  
   def test_resta
 
     @matriz3[0,0] = 0
@@ -106,6 +127,8 @@ class Prtc09::Test_MatrizDensa < Test::Unit::TestCase
   end
 
 
+  # Funcion de test que comprueba las multiplicaciones.
+  
   def test_multiplicacion
 
     @matriz3[0,0] = 1
@@ -130,8 +153,12 @@ class Prtc09::Test_MatrizDensa < Test::Unit::TestCase
 
 end
   
-  
+
+# Se define la clase Test_MatrizDispersa, que es una clase hija de TestCase. Su objetivo es servir de test para las matrices densas.
+
 class Prtc09::Test_MatrizDispersa < Test::Unit::TestCase
+  
+  # Función para definir todos los elementos necesarios para el test.
   
   def setup
     @matriz1 = Enteros_dis.new(2,2)
@@ -164,6 +191,9 @@ class Prtc09::Test_MatrizDispersa < Test::Unit::TestCase
 
   end
 
+  
+  # Funcion de test que comprueba las sumas.
+  
   def test_suma
 
     @matriz3[0,0] = 5
@@ -187,6 +217,8 @@ class Prtc09::Test_MatrizDispersa < Test::Unit::TestCase
   end
 
 
+  # Funcion de test que comprueba las restas.
+  
   def test_resta
 
     @matriz3[0,0] = -3
@@ -210,6 +242,8 @@ class Prtc09::Test_MatrizDispersa < Test::Unit::TestCase
   end
 
 
+  # Funcion de test que comprueba las multiplicaciones.
+  
   def test_multiplicacion
 
     @matriz3[0,0] = 4
@@ -235,9 +269,11 @@ class Prtc09::Test_MatrizDispersa < Test::Unit::TestCase
 end
 
 
-# Combinación de operaciones entre ambos tipos de matrices
+# Definicion del Test de Matrices Densas y Dispersas. Combinación de operaciones entre ambos tipos de matrices.
 
 class Prtc09::Test_MatricesDensasyDispersas < Test::Unit::TestCase
+  
+  # Función para definir todos los elementos necesarios para el test.
   
   def setup
     @matriz1 = Enteros.new(2,2)
@@ -270,6 +306,9 @@ class Prtc09::Test_MatricesDensasyDispersas < Test::Unit::TestCase
 
   end
 
+  
+  # Funcion de test que comprueba las sumas.
+  
   def test_suma
 
     @matriz5[0,0] = 5
@@ -292,7 +331,9 @@ class Prtc09::Test_MatricesDensasyDispersas < Test::Unit::TestCase
 
   end
 
-
+  
+  # Funcion de test que comprueba las restas.
+  
   def test_resta
 
     @matriz3[0,0] = -3
@@ -315,6 +356,8 @@ class Prtc09::Test_MatricesDensasyDispersas < Test::Unit::TestCase
 
   end
 
+  
+  # Funcion de test que comprueba las multiplicaciones.
 
   def test_multiplicacion
 
