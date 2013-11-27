@@ -4,20 +4,21 @@ module Prtc09
     
     include Enumerable
 	attr_reader :filas, :columnas
-	
+	#Función para inicializar las filas y las columnas
 	  def initialize(filas, columnas)
 	    @filas = filas
 	    @columnas = columnas
 	  end
-	  
+	  #Devuelve filas
 	  def filas
 	    return @filas
 	  end
-
+	  #Devuelve columnas
 	  def columnas	    
 	    return @columnas
 	  end
-	  
+	 
+	  #Funcion para sumar matrices
 	  def +(other)
 	    
 	    if (other.columnas == self.columnas && other.filas == self.filas)	      
@@ -33,7 +34,9 @@ module Prtc09
 	    end
 	    
 	  end
-  
+	  
+  	  #Funcion para restar matrices
+
 	  def -(other)
 	    	    
 	    if ((other.columnas == self.columnas) && (other.filas == self.filas))	      
@@ -50,6 +53,8 @@ module Prtc09
 	    
 	  end
 	  
+	  #Funcion para multiplicar matrices
+
 	  def *(other)
 
 	    mul = self.class.new(filas, other.columnas)        
@@ -64,6 +69,8 @@ module Prtc09
 	      mul
 
 	  end
+
+	  #Funcion para imprimir en forma de cadena una matriz
 	  
 	  def to_s
       
@@ -78,7 +85,9 @@ module Prtc09
 	    end
 	    
 	  end
-          
+         
+	  #Funcion para comprobar la igualdad entre matrices
+
 	  def ==(other)
 	        
 	    for i in (0...self.filas)
@@ -90,7 +99,9 @@ module Prtc09
 	    end
 	    	  return true
 	  end
-	  
+	 
+	  #Funcion para comprobar el mayor elemento de una matriz
+
 	  def max 
 	    mmax = self[0,0] 
 	    for i in (0...self.filas) 
@@ -102,6 +113,8 @@ module Prtc09
 	    end 
 	    mmax
 	  end
+
+	  #Funcion para comprobar el menor elemento de una matriz
 
 	  def min 
 	    mmin = self[0,0] 
