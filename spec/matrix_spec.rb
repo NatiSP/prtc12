@@ -539,8 +539,16 @@ describe Prtc09::Matrix do
      @matriz1[1,0] = 1
      @matriz1[1,1] = 0
      
+     @matriz3[0,0] = 0
+     @matriz3[0,1] = 0
+     @matriz3[1,0] = 0
+     @matriz3[1,1] = 3
+     
      (@matriz1.min).should ==(@matriz1[1,1])
      (@matriz1.max).should ==(@matriz1[0,0])
+     
+     (@matriz3.min).should ==(@matriz3[0,1])
+     (@matriz3.max).should ==(@matriz3[1,1])
     end
     
     

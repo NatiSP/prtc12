@@ -23,8 +23,8 @@ module Prtc09
 	    
 	    if (other.columnas == self.columnas && other.filas == self.filas)	      
 	      suma = self.class.new(self.filas,self.columnas)	    
-	    for i in 0...self.filas
-	      for j in 0...self.columnas		
+	    self.filas.times do |i| 
+	      self.columnas.times do |j|		
 		suma[i,j] = self[i,j] + other[i,j]
 	      end
 	    end
@@ -104,8 +104,8 @@ module Prtc09
 
 	  def max 
 	    mmax = self[0,0] 
-	    for i in (0...self.filas) 
-	      for j in (0...self.columnas) 
+	    self.filas.times do |i| 
+	      self.columnas.times do |j|
 		if(self[i,j] > mmax) 
 		  mmax = self[i,j] 
 		end
@@ -118,8 +118,8 @@ module Prtc09
 
 	  def min 
 	    mmin = self[0,0] 
-	    for i in (0...self.filas) 
-	      for j in (0...self.columnas) 
+	    self.filas.times do |i| 
+	      self.columnas.times do |j|
 		if(self[i,j] < mmin) 
 		  mmin = self[i,j] 
 		end 
