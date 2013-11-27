@@ -1,0 +1,24 @@
+Wed, 27 Nov 2013 16:31:26 +0000
+./lib/prtc09.rb	Wed, 27 Nov 2013 16:20:51 +0000
+./lib/prtc09.rb~	Wed, 27 Nov 2013 16:20:50 +0000
+./lib/version.rb	Fri, 22 Nov 2013 13:32:02 +0000
+./lib/prtc09/matrix_dispersas.rb	Wed, 27 Nov 2013 16:19:49 +0000
+./lib/prtc09/fraccion.rb~	Wed, 27 Nov 2013 16:07:08 +0000
+./lib/prtc09/fraccion.rb	Wed, 27 Nov 2013 16:07:08 +0000
+./lib/prtc09/version.rb	Fri, 22 Nov 2013 13:32:02 +0000
+./lib/prtc09/matrix_dispersas.rb~	Wed, 27 Nov 2013 16:19:49 +0000
+./lib/prtc09/matrix.rb~	Wed, 27 Nov 2013 16:10:14 +0000
+./lib/prtc09/matrix_densas.rb~	Wed, 27 Nov 2013 16:11:46 +0000
+./lib/prtc09/matrix.rb	Wed, 27 Nov 2013 16:10:15 +0000
+./lib/prtc09/matrix_densas.rb	Wed, 27 Nov 2013 16:11:47 +0000
+./Guardfile	Fri, 22 Nov 2013 13:32:02 +0000
+./doc/created.rid	Wed, 27 Nov 2013 16:31:26 +0000
+./spec/matrix_spec.rb	Wed, 27 Nov 2013 16:30:51 +0000
+./prtc09.gemspec	Wed, 27 Nov 2013 15:46:31 +0000
+./version.rb	Fri, 22 Nov 2013 13:32:02 +0000
+./test/tc_matrix.rb	Wed, 27 Nov 2013 16:30:51 +0000
+./prtc09-0.0.1.gem	Wed, 27 Nov 2013 15:44:53 +0000
+./Gemfile~	Fri, 22 Nov 2013 13:32:02 +0000
+./Gemfile	Fri, 22 Nov 2013 13:32:02 +0000
+./Rakefile	Fri, 22 Nov 2013 13:32:02 +0000
+./prtc09.gemspec~	Wed, 27 Nov 2013 15:46:30 +0000

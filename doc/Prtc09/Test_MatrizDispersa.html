@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Prtc09::Test_MatrizDispersa - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>test/tc_matrix.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Test::Unit::TestCase
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li ><a href="#method-i-setup">#setup</a>
+    
+    <li ><a href="#method-i-test_multiplicacion">#test_multiplicacion</a>
+    
+    <li ><a href="#method-i-test_resta">#test_resta</a>
+    
+    <li ><a href="#method-i-test_suma">#test_suma</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../Gemfile~.html">Gemfile~</a>
+  
+    <li class="file"><a href="../Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../lib/prtc09_rb~.html">prtc09.rb~</a>
+  
+    <li class="file"><a href="../lib/prtc09/fraccion_rb~.html">fraccion.rb~</a>
+  
+    <li class="file"><a href="../lib/prtc09/matrix_rb~.html">matrix.rb~</a>
+  
+    <li class="file"><a href="../lib/prtc09/matrix_densas_rb~.html">matrix_densas.rb~</a>
+  
+    <li class="file"><a href="../lib/prtc09/matrix_dispersas_rb~.html">matrix_dispersas.rb~</a>
+  
+    <li class="file"><a href="../prtc09_gemspec.html">prtc09.gemspec</a>
+  
+    <li class="file"><a href="../prtc09_gemspec~.html">prtc09.gemspec~</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Enteros.html">Enteros</a>
+  
+    <li><a href="../Enteros_dis.html">Enteros_dis</a>
+  
+    <li><a href="../Fraccionarios.html">Fraccionarios</a>
+  
+    <li><a href="../Fraccionarios_dis.html">Fraccionarios_dis</a>
+  
+    <li><a href="../Prct09.html">Prct09</a>
+  
+    <li><a href="../Prtc09.html">Prtc09</a>
+  
+    <li><a href="../Prtc09/Fraccion.html">Prtc09::Fraccion</a>
+  
+    <li><a href="../Prtc09/Matrix.html">Prtc09::Matrix</a>
+  
+    <li><a href="../Prtc09/Matrix_Densa.html">Prtc09::Matrix_Densa</a>
+  
+    <li><a href="../Prtc09/Matrix_Dispersa.html">Prtc09::Matrix_Dispersa</a>
+  
+    <li><a href="../Prtc09/Matrix_Dispersa/AccHash.html">Prtc09::Matrix_Dispersa::AccHash</a>
+  
+    <li><a href="../Prtc09/Test_MatricesDensasyDispersas.html">Prtc09::Test_MatricesDensasyDispersas</a>
+  
+    <li><a href="../Prtc09/Test_MatrizDensa.html">Prtc09::Test_MatrizDensa</a>
+  
+    <li><a href="../Prtc09/Test_MatrizDispersa.html">Prtc09::Test_MatrizDispersa</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Prtc09::Test_MatrizDispersa</h1>
+
+  <div id="description" class="description">
+    
+<p>Se define la clase <a
+href="Test_MatrizDispersa.html">Test_MatrizDispersa</a>, que es una clase
+hija de TestCase. Su objetivo es servir de test para las matrices densas.</p>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-setup" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setup</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Función para definir todos los elementos necesarios para el test.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="setup-source">
+            <pre><span class="ruby-comment"># File test/tc_matrix.rb, line 163</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
+  <span class="ruby-ivar">@matriz1</span> = <span class="ruby-constant">Enteros_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz2</span> = <span class="ruby-constant">Enteros_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz3</span> = <span class="ruby-constant">Enteros_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz4</span> = <span class="ruby-constant">Fraccionarios_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz5</span> = <span class="ruby-constant">Fraccionarios_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz6</span> = <span class="ruby-constant">Fraccionarios_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@matriz7</span> = <span class="ruby-constant">Fraccionarios_dis</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+
+  <span class="ruby-ivar">@matriz1</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">1</span>
+  <span class="ruby-ivar">@matriz1</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz1</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz1</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+
+  <span class="ruby-ivar">@matriz2</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">4</span>
+  <span class="ruby-ivar">@matriz2</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz2</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz2</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+
+  <span class="ruby-ivar">@matriz4</span>[<span class="ruby-value">0</span>, <span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz4</span>[<span class="ruby-value">0</span>, <span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz4</span>[<span class="ruby-value">1</span>, <span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz4</span>[<span class="ruby-value">1</span>, <span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+    
+  <span class="ruby-ivar">@matriz5</span>[<span class="ruby-value">0</span>, <span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz5</span>[<span class="ruby-value">0</span>, <span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz5</span>[<span class="ruby-value">1</span>, <span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz5</span>[<span class="ruby-value">1</span>, <span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- setup-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- setup-method -->
+
+    
+      <div id="method-i-test_multiplicacion" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_multiplicacion</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Funcion de test que comprueba las multiplicaciones.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_multiplicacion-source">
+            <pre><span class="ruby-comment"># File test/tc_matrix.rb, line 247</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_multiplicacion</span>
+
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">4</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz3</span>, <span class="ruby-ivar">@matriz1</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@matriz2</span>)
+
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz6</span>, <span class="ruby-ivar">@matriz4</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@matriz5</span>)
+
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz7</span>, <span class="ruby-ivar">@matriz3</span> <span class="ruby-operator">*</span> <span class="ruby-ivar">@matriz6</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_multiplicacion-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_multiplicacion-method -->
+
+    
+      <div id="method-i-test_resta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_resta</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Funcion de test que comprueba las restas.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_resta-source">
+            <pre><span class="ruby-comment"># File test/tc_matrix.rb, line 222</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_resta</span>
+
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">-3</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz3</span>, <span class="ruby-ivar">@matriz1</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@matriz2</span>)
+
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">-1</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz6</span>, <span class="ruby-ivar">@matriz4</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@matriz5</span>)
+
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">-3</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">-1</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz7</span>, <span class="ruby-ivar">@matriz3</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@matriz6</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_resta-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_resta-method -->
+
+    
+      <div id="method-i-test_suma" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_suma</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Funcion de test que comprueba las sumas.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="test_suma-source">
+            <pre><span class="ruby-comment"># File test/tc_matrix.rb, line 197</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_suma</span>
+
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">5</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-ivar">@matriz3</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz3</span>, <span class="ruby-ivar">@matriz1</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@matriz2</span>)
+
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz6</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz6</span>, <span class="ruby-ivar">@matriz4</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@matriz5</span>)
+
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">0</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">5</span>, <span class="ruby-value">3</span>)
+  <span class="ruby-ivar">@matriz7</span>[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>] = <span class="ruby-constant">Prtc09</span><span class="ruby-operator">::</span><span class="ruby-constant">Fraccion</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">0</span>, <span class="ruby-value">1</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@matriz7</span>, <span class="ruby-ivar">@matriz3</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@matriz6</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_suma-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_suma-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
