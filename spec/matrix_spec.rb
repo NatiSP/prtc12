@@ -551,8 +551,29 @@ describe Prtc09::Matrix do
      (@matriz3.max).should ==(@matriz3[1,1])
     end
     
+    # Esta expectativa pertenece a la modificación pedida en la práctica 11. 
+    # Se comprueba que el metodo encontrar da como resultado el primer numero que cumple la condición especificada.
     
-    # Esta expectativa pertenece a la modificación pedida en la práctica anterior. 
+    it "Modificación (encontrar)" do
+      
+      @matrize = Enteros.new(3,3)
+
+      @matrize[0,0]=1
+      @matrize[0,1]=2
+      @matrize[0,2]=3
+      @matrize[1,0]=4
+      @matrize[1,1]=5
+      @matrize[1,2]=6
+      @matrize[2,0]=7
+      @matrize[2,1]=8
+      @matrize[2,2]=9
+
+      (@matrize.encontrar{|e| e*e >= 16}).should ==([1,0])
+      
+    end
+    
+    
+    # Esta expectativa pertenece a la modificación pedida en la práctica 9. 
     # Se comprueba que las operaciones básicas entre una matriz densa de enteros y una matriz dispersa de fracciones dan resultados correctos.
     
     it "Operaciones de la modificacion" do

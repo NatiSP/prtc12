@@ -128,6 +128,16 @@ module Prtc09
 	    mmin 
 	  end
 	  
+	  def encontrar
+	    self.filas.times do |i|
+	      self.columnas.times do |j|
+		if(yield(self[i, j]))
+		  return i, j
+		end
+	      end
+	    end
+	  nil
+	 end
 
   end
 
