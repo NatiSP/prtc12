@@ -611,6 +611,20 @@ describe Prtc09::Matrix do
       
     end
     
+    it "Matrix DSL" do
+      
+      @ejemplo = Prtc09::MatrixDSL.new("suma") do 
+	option "densa" 
+	option "console"
+
+	operand [[1,2,3],[4,5,6],[7,8,9]]  
+	operand [[1,1,1],[1,1,1],[1,1,1]]  
+      end
+      
+      puts ejemplo.to_m
+      
+    end
+    
 end
   
     
